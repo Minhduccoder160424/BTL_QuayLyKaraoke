@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="BTL_QuanLyKaraokeDataSet" targetNamespace="http://tempuri.org/BTL_QuanLyKaraokeDataSet.xsd" xmlns:mstns="http://tempuri.org/BTL_QuanLyKaraokeDataSet.xsd" xmlns="http://tempuri.org/BTL_QuanLyKaraokeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="BTL_QuanLyKaraokeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="BTL_QuanLyKaraokeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.GUI.Properties.Settings.GlobalReference.Default.BTL_QuanLyKaraokeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_HoaDonTableAdapter" GeneratorDataComponentClassName="View_HoaDonTableAdapter" Name="View_HoaDon" UserDataComponentName="View_HoaDonTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BTL_QuanLyKaraokeConnectionString (Settings)" DbObjectName="BTL_QuanLyKaraoke.dbo.View_HoaDon" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT MaHD, MatHangID, TenMatHang, TienMatHang FROM dbo.View_HoaDon</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="MaHD" DataSetColumn="MaHD" />
+              <Mapping SourceColumn="MatHangID" DataSetColumn="MatHangID" />
+              <Mapping SourceColumn="TenMatHang" DataSetColumn="TenMatHang" />
+              <Mapping SourceColumn="TienMatHang" DataSetColumn="TienMatHang" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="View_PhongTableAdapter" GeneratorDataComponentClassName="View_PhongTableAdapter" Name="View_Phong" UserDataComponentName="View_PhongTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="BTL_QuanLyKaraokeConnectionString (Settings)" DbObjectName="BTL_QuanLyKaraoke.dbo.View_Phong" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT PhongHatID, TenPhong, GiaTheoGio, ThoiGianDatPhong FROM dbo.View_Phong</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="PhongHatID" DataSetColumn="PhongHatID" />
+              <Mapping SourceColumn="TenPhong" DataSetColumn="TenPhong" />
+              <Mapping SourceColumn="GiaTheoGio" DataSetColumn="GiaTheoGio" />
+              <Mapping SourceColumn="ThoiGianDatPhong" DataSetColumn="ThoiGianDatPhong" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="BTL_QuanLyKaraokeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="BTL_QuanLyKaraokeDataSet" msprop:Generator_DataSetName="BTL_QuanLyKaraokeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="View_HoaDon" msprop:Generator_RowEvHandlerName="View_HoaDonRowChangeEventHandler" msprop:Generator_RowDeletedName="View_HoaDonRowDeleted" msprop:Generator_RowDeletingName="View_HoaDonRowDeleting" msprop:Generator_RowEvArgName="View_HoaDonRowChangeEvent" msprop:Generator_TablePropName="View_HoaDon" msprop:Generator_RowChangedName="View_HoaDonRowChanged" msprop:Generator_RowChangingName="View_HoaDonRowChanging" msprop:Generator_TableClassName="View_HoaDonDataTable" msprop:Generator_RowClassName="View_HoaDonRow" msprop:Generator_TableVarName="tableView_HoaDon" msprop:Generator_UserTableName="View_HoaDon">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="MaHD" msprop:Generator_ColumnPropNameInRow="MaHD" msprop:Generator_ColumnPropNameInTable="MaHDColumn" msprop:Generator_ColumnVarNameInTable="columnMaHD" msprop:Generator_UserColumnName="MaHD">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MatHangID" msprop:Generator_ColumnPropNameInRow="MatHangID" msprop:Generator_ColumnPropNameInTable="MatHangIDColumn" msprop:Generator_ColumnVarNameInTable="columnMatHangID" msprop:Generator_UserColumnName="MatHangID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenMatHang" msprop:Generator_ColumnPropNameInRow="TenMatHang" msprop:Generator_ColumnPropNameInTable="TenMatHangColumn" msprop:Generator_ColumnVarNameInTable="columnTenMatHang" msprop:Generator_UserColumnName="TenMatHang">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TienMatHang" msprop:Generator_ColumnPropNameInRow="TienMatHang" msprop:Generator_ColumnPropNameInTable="TienMatHangColumn" msprop:Generator_ColumnVarNameInTable="columnTienMatHang" msprop:Generator_UserColumnName="TienMatHang" type="xs:double" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="View_Phong" msprop:Generator_RowEvHandlerName="View_PhongRowChangeEventHandler" msprop:Generator_RowDeletedName="View_PhongRowDeleted" msprop:Generator_RowDeletingName="View_PhongRowDeleting" msprop:Generator_RowEvArgName="View_PhongRowChangeEvent" msprop:Generator_TablePropName="View_Phong" msprop:Generator_RowChangedName="View_PhongRowChanged" msprop:Generator_RowChangingName="View_PhongRowChanging" msprop:Generator_TableClassName="View_PhongDataTable" msprop:Generator_RowClassName="View_PhongRow" msprop:Generator_TableVarName="tableView_Phong" msprop:Generator_UserTableName="View_Phong">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="PhongHatID" msprop:Generator_ColumnPropNameInRow="PhongHatID" msprop:Generator_ColumnPropNameInTable="PhongHatIDColumn" msprop:Generator_ColumnVarNameInTable="columnPhongHatID" msprop:Generator_UserColumnName="PhongHatID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TenPhong" msprop:Generator_ColumnPropNameInRow="TenPhong" msprop:Generator_ColumnPropNameInTable="TenPhongColumn" msprop:Generator_ColumnVarNameInTable="columnTenPhong" msprop:Generator_UserColumnName="TenPhong">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="GiaTheoGio" msprop:Generator_ColumnPropNameInRow="GiaTheoGio" msprop:Generator_ColumnPropNameInTable="GiaTheoGioColumn" msprop:Generator_ColumnVarNameInTable="columnGiaTheoGio" msprop:Generator_UserColumnName="GiaTheoGio" type="xs:double" minOccurs="0" />
+              <xs:element name="ThoiGianDatPhong" msprop:Generator_ColumnPropNameInRow="ThoiGianDatPhong" msprop:Generator_ColumnPropNameInTable="ThoiGianDatPhongColumn" msprop:Generator_ColumnVarNameInTable="columnThoiGianDatPhong" msprop:Generator_UserColumnName="ThoiGianDatPhong" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:View_Phong" />
+      <xs:field xpath="mstns:PhongHatID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,2 +1,2 @@
 # BTL_QuayLyKaraoke
-đay là bài tập lớn winform của tôi
+đây là bài tập lớn winform của tôi
